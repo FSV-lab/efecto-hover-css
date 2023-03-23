@@ -1,0 +1,30 @@
+button {
+    position: relative;
+    background-color: transparent;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button::before {
+    content: "";
+    color: white;
+}
+button:hover{
+    color: white;
+}
+button:hover::before{
+    color: green;
+    content: "¡Hecho!"
+    
+}
+button:hover {
+    background-color: green;
+}
+
+button:hover::after {
+    color: white;
+    content: "¡Hecho!";
+}
